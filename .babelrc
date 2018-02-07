@@ -1,0 +1,26 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        ["@babel/preset-env", {
+          "modules": false,
+          "targets": { "browsers": "last 1 Chrome version" },
+          "useBuiltIns": "usage",
+        }],
+      ],
+    },
+    "production": {
+      "presets": [
+        ["@babel/preset-env", {
+          "debug": true,
+          "modules": false,
+          "targets": { "browsers": "last 2 versions" },
+          "useBuiltIns": "usage",
+        }],
+      ],
+    },
+    "test": {
+      "presets": ["env"],
+    },
+  },
+}

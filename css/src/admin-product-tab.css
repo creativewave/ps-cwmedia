@@ -1,0 +1,32 @@
+
+.library-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  padding-left: 0; /* Override browser default. */
+  list-style-type: none; /* Override browser default. */
+}
+
+.library-item label {
+  position: relative; /* Fix `.library-selector` position. */
+  cursor: pointer;
+}
+
+.library-item input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+}
+
+.library-item input[type=checkbox]:checked + img {
+  background-color: #00aff0;
+}
+
+/**
+ * Prevents browser default when dragging image, to allow drag and drop from
+ * the thumbnail.
+ */
+#product-tab-content-ModuleCwmedia .img-thumbnail {
+  pointer-events: none;
+}

@@ -1,0 +1,9 @@
+/.github-token
+/.php_cs.cache
+/composer.lock
+/config_*.xml
+/coverage/
+/css/*.css
+/js/*.js
+/node_modules/
+/vendor/
